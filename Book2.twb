@@ -1,0 +1,514 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1112.0850                               -->
+<workbook original-version='18.1' source-build='2024.3.1 (20243.24.1112.0850)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Churn_Modelling' inline='true' name='federated.0b242t8017tvgv1aen8vu0tbnhe9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Churn_Modelling' name='textscan.1noctie1snt7b81b9itwm0h0ou9e'>
+            <connection class='textscan' directory='C:/Users/hi/Downloads' filename='Churn_Modelling.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1noctie1snt7b81b9itwm0h0ou9e' name='Churn_Modelling.csv' table='[Churn_Modelling#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='RowNumber' ordinal='0' />
+            <column datatype='integer' name='CustomerId' ordinal='1' />
+            <column datatype='string' name='Surname' ordinal='2' />
+            <column datatype='integer' name='CreditScore' ordinal='3' />
+            <column datatype='string' name='Geography' ordinal='4' />
+            <column datatype='string' name='Gender' ordinal='5' />
+            <column datatype='integer' name='Age' ordinal='6' />
+            <column datatype='integer' name='Tenure' ordinal='7' />
+            <column datatype='real' name='Balance' ordinal='8' />
+            <column datatype='integer' name='NumOfProducts' ordinal='9' />
+            <column datatype='integer' name='HasCrCard' ordinal='10' />
+            <column datatype='integer' name='IsActiveMember' ordinal='11' />
+            <column datatype='real' name='EstimatedSalary' ordinal='12' />
+            <column datatype='integer' name='Exited' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RowNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RowNumber]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>RowNumber</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerId]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>CustomerId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Surname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Surname]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>Surname</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CreditScore]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>CreditScore</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geography</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Geography]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>Geography</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tenure]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>Tenure</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balance]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>Balance</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumOfProducts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumOfProducts]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>NumOfProducts</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasCrCard</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HasCrCard]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>HasCrCard</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsActiveMember</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsActiveMember]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>IsActiveMember</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstimatedSalary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EstimatedSalary]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>EstimatedSalary</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exited</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exited]</local-name>
+            <parent-name>[Churn_Modelling.csv]</parent-name>
+            <remote-alias>Exited</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Credit Score' datatype='integer' name='[CreditScore]' role='measure' type='quantitative' />
+      <column caption='Customer Id' datatype='integer' name='[CustomerId]' role='dimension' type='ordinal' />
+      <column caption='Estimated Salary' datatype='real' name='[EstimatedSalary]' role='measure' type='quantitative' />
+      <column caption='Has Cr Card' datatype='integer' name='[HasCrCard]' role='measure' type='quantitative' />
+      <column caption='Is Active Member' datatype='integer' name='[IsActiveMember]' role='measure' type='quantitative' />
+      <column caption='Num Of Products' datatype='integer' name='[NumOfProducts]' role='measure' type='quantitative' />
+      <column caption='Row Number' datatype='integer' name='[RowNumber]' role='dimension' type='ordinal' />
+      <column caption='Churn_Modelling.csv' datatype='table' name='[__tableau_internal_object_id__].[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Churn_Modelling.csv' id='Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072'>
+            <properties context=''>
+              <relation connection='textscan.1noctie1snt7b81b9itwm0h0ou9e' name='Churn_Modelling.csv' table='[Churn_Modelling#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='RowNumber' ordinal='0' />
+                  <column datatype='integer' name='CustomerId' ordinal='1' />
+                  <column datatype='string' name='Surname' ordinal='2' />
+                  <column datatype='integer' name='CreditScore' ordinal='3' />
+                  <column datatype='string' name='Geography' ordinal='4' />
+                  <column datatype='string' name='Gender' ordinal='5' />
+                  <column datatype='integer' name='Age' ordinal='6' />
+                  <column datatype='integer' name='Tenure' ordinal='7' />
+                  <column datatype='real' name='Balance' ordinal='8' />
+                  <column datatype='integer' name='NumOfProducts' ordinal='9' />
+                  <column datatype='integer' name='HasCrCard' ordinal='10' />
+                  <column datatype='integer' name='IsActiveMember' ordinal='11' />
+                  <column datatype='real' name='EstimatedSalary' ordinal='12' />
+                  <column datatype='integer' name='Exited' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Analyze Demographics'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Churn_Modelling' name='federated.0b242t8017tvgv1aen8vu0tbnhe9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b242t8017tvgv1aen8vu0tbnhe9'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Churn_Modelling.csv' datatype='table' name='[__tableau_internal_object_id__].[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0b242t8017tvgv1aen8vu0tbnhe9].[__tableau_internal_object_id__].[cnt:Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072:qk]</rows>
+        <cols>([federated.0b242t8017tvgv1aen8vu0tbnhe9].[none:Gender:nk] * [federated.0b242t8017tvgv1aen8vu0tbnhe9].[sum:Age:qk])</cols>
+      </table>
+      <simple-id uuid='{3F3608C0-85B0-4326-A1E2-9C4172B17AAF}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Churn_Modelling' name='federated.0b242t8017tvgv1aen8vu0tbnhe9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b242t8017tvgv1aen8vu0tbnhe9'>
+            <column caption='Churn_Modelling.csv' datatype='table' name='[__tableau_internal_object_id__].[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0b242t8017tvgv1aen8vu0tbnhe9].[__tableau_internal_object_id__].[cnt:Churn_Modelling.csv_39E60C8413594823BC88A737E6D62072:qk]</cols>
+      </table>
+      <simple-id uuid='{1CDF83B6-4E73-40DA-B87C-FCA1FC610FED}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b242t8017tvgv1aen8vu0tbnhe9].[none:Calculation_2519764029630226433:qk]</field>
+            <field>[federated.0b242t8017tvgv1aen8vu0tbnhe9].[none:RowNumber:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FA788FE9-65FF-4765-ACA6-8AC40C650FD6}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Analyze Demographics'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b242t8017tvgv1aen8vu0tbnhe9].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{33ACEE3B-7F46-4D71-B78A-4F7FA6248DBA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Analyze Demographics' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAPfUlEQVR4nO3d2W9bZ37G8e85h/u+arFkW3JmEjtI0qaTTqdAMF2m6E0v+vf1qre9K4pB
+      0V60QIBO4JnpYNIkzmJbkRUvkrWQFLdD8qy9sONOKkqiqY3heT5Abiw91M/B++jwkC9fG2EY
+      hohElHleD6QeyQ/RuRWg1+ud10OJXJpzK4DILAjDkHv/8zu+ebx95GtPHj858mfGed0DdLtd
+      8vn8eTyUyNSC4S4f3X1MpRbns7sfs7z6Jq4BlYUKT7aekaWPlVpg5e03eWf9OrGrHljkPBnJ
+      KvHwHsNhjtX1t6gXC1iZLI2+TblcJhcvkIzlWV+//uL7dQWQeReGIYZhjP2a7gFk7p30Ao0K
+      MAMeP9pgr3E49muBY9OxR5c8UXToHmAG9Ho9rHiCf//Xu6y9+WOGdp90tsCg+ZRUvkJoxvjV
+      1lN+8dd/RTKu31nnSQWYAYsrN8glLa6vr5PPF6lXK0DAvlMhEbMw4knW1tewtPbPnRG+cOYH
+      0k2wzKqT1uarK8BZ38kdDAbH3mmfJggCTHO6X2/KKnta9qS1GQMwDONcfntP+xie5xGLTfds
+      TFllJ8ketzb1rFIiTQWQSFMBJNJUAIm0ie4uwjDE931M0yQIQizT4MULpyEYJuaUr/6IXLWJ
+      CuB1dvjk2y61bIzASmB5NrZrYAZDEpkyt9ZWCcPwTJ8KU1bZi8qetDYnK4CRJuk9wWGZw719
+      FhfKpI0Aw8oD/qsfEATBVEMGQXCm9xCUVfakbBAEx67NiQqQzOaoLFxnoVqgmc9SzsYZ+Bam
+      ZxPPljFNE9M0sSxrqkHDMFRW2QvLfvffOBMVwLTiXF+9BsByOgdACoDsVIOJzAq9CiSRpgJI
+      pKkAEmkqgESaCiCRpgJIpKkAEmkqgESaCiCRpgJIpE20FSJwunzxcJtri1UanT6VTIy+Z2J6
+      NolclcVa6aLnFLkQExXAtW28MKDVHZCJm9heiBk4EE/jDLoEQQHf9/E8b6ohgiBQVtkLy560
+      Nif7uH0iQ9raJ24ZtO0h5UwM2zcxRx0S+eqrnaBX/cl/ZZUdlz1pbU62HTqT5/add6YaQmSW
+      6SZYIk0FkEhTASTSVACJNBVAIk0FkEhTASTSVACJNBVAIk3/RphciJHj8S8f38cPQv7uZ29Q
+      mHI7w0Wb+ArgeR6B7zEYDPF9D9fzcF0Hf8rjEGW+/frLp/zs7VX+5ifr/OrzJ1c9zrEmOx06
+      8Pj47m9YX13EM1MYns3QAzNwiaXz3Lp5XYfjKvs9b6xU+OiTLSzL4Cc/XvphH47b3N3G9X0w
+      4+zt7rFYL5GwAox4CoNQh+Mqe8RyJcvff/gmQQDphHmla+OktTlRAarLN/h5dQkj8EjnixTS
+      MUa+heEPiafzOhxX2bHymRff73nelc580tqc+M4kkUgACeqpDABJANJTDSYyK/QyqESaCiCR
+      pgJIpKkAEmkqgESaCiCRpgJIpKkAEmkqgESaCiCRNtlu0DDk4cYGi9Uiz5s25WwM+w8Ox12q
+      ly96TpELMVEB+of7PD84JJFIkk1aDH2wQhcSGdxhjyAo6nBcZWc2e+bDcWPJDLVSjmTMpNUf
+      UcnEsEMLY9AlqcNxlZ3x7JkPx01lcrx95w4Ay1ONIjKbdBMskaYCSKSpABJpKoBEmgogkaYC
+      SKSpABJpKoBE2tgCPH+8yWdfPECHHsq8G1uAIAzZ39nBv+xpRC7Z2AI0mm22tx7x3fahMPDp
+      dHv4rkO708NzRwxHLqOhjevpOiE/XGP3AhVLBf7sww9ffdFzRmw9+AIyZfLZLM19G8cHI/SI
+      JbOsvzwcd9rzH5VV9iKzJz3G2CuA5wx5/OQZ352nGxCSiMdIp9LsPt8lNExMw8C0LODk03dF
+      rtpJa3PsFWBp5QaeazAcuSSScWKxONVr65QKGeqVEplkDDc0MHwHK5l9dTiuaU73olIQBMoq
+      e2HZk9bm2AJ88eknbG83eG47/Pyn72PFEtRrFQBKiRQACQBSUw0mMivG1mKhXqYfWPzJe3cu
+      ex6RSzW2AAeNDrdurpJM6Te8zLcjBQjDEclkDsd1r2IekUt1pAB2u0Oz17mKWUQunfYCSaQd
+      KUC2VKdWNGlsd7QVQubekQK4QxvHNeg4Pf0r2jL3xj4F2ts7pJSOodtgmXdHChBPZXj3zhvY
+      pqW3uWTujb8CNA4pJ+M4lz2NyCU78jS/9ewRG0/3KBUqr9rhDHpsPvqWQqVKuzug8r3DcSss
+      L1QveWyR83GkAIWFZX50fY+H3x68+rN4Kg3uiMO+QyEVYxQYxPAgmcUb2QRBWYfjKjuz2dc6
+      HLezt839rW0W64s4jkc8EWPY72EkUhRSMXr2iHLWwg5imKMeiVxNh+MqO9PZk9amER6zWToI
+      Wnz+aYc/ev/mRD+s2+2Sz+fPNKiyyl5E9qS1OfaR7W6b/cY+5aqe28t8G/sq0L1P/pvff7LB
+      0g0VQObb2CtAvlDindVFrMueRuSSjb0CpNNJ7n36ufYCydwbW4BMvkgqbqGPucu8G1uAzuEh
+      5VpNe6Vl7h39QExrj/tb27j6RJhEwJEC9Paf886f/wWFhKl7AJl7RwpQf+MOzW8+wypWtRtU
+      5t6RArR3dyFdZGWxqtOhZe4dKUC+XqO7+5iPf/37VwXwnCEbDzc4bDXZePSYdnOfnb0Gu9tP
+      aHX6lzyyyPk58kaYFU+RTqXpdbt4L7/BMC1yaYvtvQapVJp2fwC+D1ac0WGDYi6t3aDKzmz2
+      tXaDArz97rsctOyXxx/C4HCfp40+q4s1tncPqBZSDDwTc3BIIlfVblBlZzp70to88qdh6PDL
+      f/4lxeoSSzeukQRytWt8ULsGwNLS0lTDiMyiIwUwjATvvXeHztDQG2Ey98au8XgiftlziFyJ
+      sQUolsrY/Z72AsncG/8sJwwJAi1/mX9jC7Czs4MzHOoKIHPv6NGIdofywjKxTEZHI8rcO7LG
+      u3vbbHdCYr6LB/pUmMy1IwUo33yLt5oHmOs3SF7FRCKXaMz7AAblav0qZhG5dHqvSyJNBZBI
+      m+iFHmfQ4+GD+1iZCoPhy8NxXRPTH5DIVVi/sXLRc4pciIkKYBoGhdoKgeeQjmcJTciYAVgl
+      CDyCINB2aGVnNvva26H/P9d16fc6LC8t0ukPKWVi2L6F6fZJ5OvaDq3sTGdfazv0OOl8idtv
+      lQAoFosAvDhqtDTVYCKzQjfBEmkqgESaCiCRpgJIpKkAEmkqgESaCiCRpgJIpKkAEmkqgETa
+      RFshfHfIbrNLPmmy2+pTKyTpexaW2yeer1It5i56TpELMdluUCtO6Hu02wMgTtd2CAMf34rh
+      tJuU8xntBlV2ZrNn3w06GrC9/YzVlRV6+00Srw7HbetwXGVnPnvm3aCJdI4//eADAJaXl6ca
+      RmQW6SZYIk0FkEhTASTSVACJNBVAIk0FkEhTASTSVACJNBVAIk0FkEhTASTSJtoL5I1sHj7e
+      oZSy2GnZVLLW9w7HvXVz9aLnFLkQExUglsxQymVwHYdKIQOGQcb0MawSYeDrcFxlZzp75u3Q
+      zqBHu91maXmZ/sChlLZeHI7r2SRyFW2HVnams+eyHfr27dsAlF6cjUsWgOJUg4nMCt0ES6Sp
+      ABJpKoBEmgogkaYCSKSpABJpKoBEmgogkaYCSKSpABJpr7XJotM6YO/QppJLYHvmy71AVWrl
+      /EXNJ3KhXqsA3W6XMDTpj1zwffxYnEGvRVDMajeosjObPfNu0O/kcjka2wekrOSLw3GHOhxX
+      2dnPnnk36HeKlTrvVepTDSMyi3QTLJGmAkikqQASaSqARJoKIJGmAkikqQASaSqARNqZCnDY
+      2Mceuuc1i8ilm7oAYRjQ6vbZff7sPOcRuVRnugIM+x0CrPOaReTSTbfLCDAMk7fuvINhGOc5
+      j8iligGEYUiv1zvTA9m2PXU2CAJMc7qLkbLKnpY9aW3GAAzDIJ8/+4dapn2Mq/4fpOz8Z49b
+      mzPxMui0f0FllT1r1gjDMJz6J/yBTqfNk61NUvkauB3ytRssVI6/IoSBx+bD+wydgFHgkcnV
+      SJseKzfXiJmn3VeE3L/3O8xEje7gkGy+RsrwWF1bwzrlnsRzbL786hvqlSI7zSb5Qo0E7kRZ
+      x+7w2b2vyOQKDN0RhWKNWOhy/bRs4PHllw9YWamy8WiHQj5L3x5QrpTx/ZD1tRscmw48vvjq
+      IbdurfLgqw1S+SyDwYhquYR7WtZ3+eLrDe7c+RG/vftbllev0Wr3qZULOL7B+tr1E7P3vv6G
+      lcUi2w2bQtKg0bWplws4nsHaiVmHe19vslBKs/WsQaVWoNcfsVDOMfIt1m6uHpsN3CEPHnyN
+      E6bwhkOK1RzdvsNiKcvQj7F2c2Vsdv/5U3YaPcrZGAPHo98dkLYSxGtZsukSg9Zz+q5FJRcn
+      lq2wUCkA53kFCENypQpG4LJ/0CCdSpwSMIincixWSywvL9DvdOiNfKxTFz84dpvGYZ9ms83y
+      Up1+p0PfCTAnuCEPfIfhwObp9j5LizX6nTa2G06UDcOAeDzOaOiyuFCl3zlk6HF61oxRq5bx
+      XJfFhTq241Ev52m3WmDGjl9IL7P1SgkwqC2vkEkmqZVytJpNDCt+ctaKU6uU2Nt+xsh16Q4D
+      qsUsrWYDI3Z6tl4pMhzYDA4bNIcBlUKWVuMAI5E8JZugVimCaRI3Q5zAopTP0GocYJ6SNYyQ
+      VH6BajHNUq3IKIxRzKVpNfaxksdnDcNi7eYNLCvO9dVFyvVreKMejVafZNzCjKfIpWIcNg5I
+      JZP/lzuvK0C328UZ9EgXa8SMAM8LyGTSx35/ELhsPtyksriM3e9Rr1UxQx/iaeLW6YvR9xw8
+      Hw4OGtRqFYzQx5ggG4YhuzvPKFbrNBtNatUXWTORPvXKE4YBTx8/pr60TKPRolYtQ+hjnZIN
+      fZfNzUcUqwuMBgMW62X2W10qpQKB75NKZziuQ6Hv8s3mIzLZHN1uj5XVa3R7Qyql/KnZwHPY
+      fLRFZWGFbNLEMKDR7lMp5vF9n/SJ2RHfbG5RW7xGt9NmqV6h2RlQLuYmym5sblGtLdDt9bm2
+      UKbZHVEuZE/N+o7NxqMnLF9bodvtUy9nafVdSvnMidnd7ScMfAvD7ZPMVwkdm3K1Tixu0Gz2
+      yKdMbN8il07g+z6ZTAY45wKcx420yHk7aW3OxE2wyFVRASTSVIAZMmrv8A//+E8M7S5fff2Q
+      xt4OO/uHVz3WXFMBZsjDrx+QNEb823/epbn3nP/46L/Y2tq66rHm2tR7geT8Xb/9x9x+/6c8
+      2rjPbz7/lr/9yw+xXf2Oukh6FUjm3klr838Bcqmpp/RvY1EAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='79' name='Sheet 1' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
